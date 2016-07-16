@@ -28,7 +28,7 @@ final class ErrorNormalizer implements NormalizerInterface
     private $urlGenerator;
     private $debug;
 
-    public function __construct(UrlGeneratorInterface $urlGenerator, bool $debug)
+    public function __construct(UrlGeneratorInterface $urlGenerator, bool $debug = false)
     {
         $this->urlGenerator = $urlGenerator;
         $this->debug = $debug;
